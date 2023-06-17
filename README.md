@@ -1,7 +1,7 @@
 Chrome extension that instead of defined domain will replace the content with defined gifs
 
 Pages can be added - in manifest.json - example 
-      "matches": ["*://*.nra.lv/*", "*://*.example.com/*"],
+      "matches": ["\*://\*.nra.lv/\*", "\*://\*.example.com/\*"],
 
 Gifs can be added either in content.js or though options from chrome extension button.
 
