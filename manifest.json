@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "NR Nē",
+  "version": "1.0",
+  "description": "Aizvieto nra.lv ar gifiem, un pasaule palika labāka",
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.nra.lv/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
